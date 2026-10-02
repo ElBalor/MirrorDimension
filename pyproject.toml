@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mirror-dimension"
+version = "0.1.0"
+authors = [
+  { name = "Heylel Yaka (Eric Yaka)" },
+]
+description = "Mirror Dimension: persistent KV cache with embedded position tags, isometric rotation, and shuffle-invariant exact recovery."
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+keywords = [
+  "kv-cache",
+  "transformer",
+  "attention",
+  "rope",
+  "long-context",
+  "inference",
+]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+  "torch>=2.0.0",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/ElBalor/MirrorDimension"
+"Bug Tracker" = "https://github.com/ElBalor/MirrorDimension/issues"
+
+[tool.setuptools]
+py-modules = ["mirror_dimension"]
